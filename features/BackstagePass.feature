@@ -39,4 +39,7 @@ Feature: Backstage Passes quality
       | Backstage passes to a TAFKAL80ETC concert | 50      | 15      |
       | Backstage passes to a TAFKAL80ETC concert | 49      | 11      |
       | Backstage passes to a TAFKAL80ETC concert | 49      | 10      |
+      | Backstage passes to a TAFKAL80ETC concert | 48      | 6       |
       | Backstage passes to a TAFKAL80ETC concert | 49      | 5       |
+      | Backstage passes to a TAFKAL80ETC concert | 48      | 5       |
+      | Backstage passes to a TAFKAL80ETC concert | 47      | 5       |

@@ -8,14 +8,18 @@ class GildedRose(object):
             if item.name == "Sulfuras, Hand of Ragnaros":
                 continue
             if item.name == "Backstage passes to a TAFKAL80ETC concert":
-                if item.quality < 50:
-                    item.quality += 1
-                    if item.sell_in < 11:
-                        if item.quality < 50:
-                            item.quality += 1
-                    if item.sell_in < 6:
-                        if item.quality < 50:
-                            item.quality += 1
+                quality_increase = 0
+                if item.sell_in < 6:
+                    quality_increase = 3
+                elif item.sell_in < 11:
+                    quality_increase = 2
+                else:
+                    quality_increase = 1
+                item.quality += quality_increase
+                if item.quality > 50:
+                    item.quality = 50
+
+
             elif item.name == "Aged Brie" :
                 if item.quality < 50:
                     item.quality += 1
