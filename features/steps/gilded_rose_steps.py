@@ -31,6 +31,14 @@ def step_impl(context, increase):
 def step_impl(context, quality):
     assert context.app.items[0].quality == quality
 
+@then('the quality should remain unchanged')
+def step_impl(context):
+    assert context.app.items[0].quality == context.original_quality
+
 @then('the sell-by should be decreased by {decrease:d}')
 def step_impl(context, decrease):
     assert context.app.items[0].sell_in == context.original_sell_in - decrease
+
+@then('the sell-by should remain unchanged')
+def step_impl(context):
+    assert context.app.items[0].sell_in == context.original_sell_in
