@@ -18,8 +18,8 @@ class GildedRose(object):
                 item.quality = min(item.quality + quality_increase, 50)
 
             elif item.name == "Aged Brie" :
-                if item.quality < 50:
-                    item.quality += 1
+                quality_increase = 1
+                item.quality = min(item.quality + quality_increase, 50)
 
             else:
                 if item.quality > 0:
